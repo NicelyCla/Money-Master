@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		620809D120C034FA0038C373 /* AddExpense.m in Sources */ = {isa = PBXBuildFile; fileRef = 620809D020C034FA0038C373 /* AddExpense.m */; };
+		620809D520C058EF0038C373 /* sample.sql in Resources */ = {isa = PBXBuildFile; fileRef = 620809D420C058EF0038C373 /* sample.sql */; };
+		620A5FCD20BDD8B800E718D1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 620A5FCC20BDD8B800E718D1 /* libsqlite3.tbd */; };
+		620A5FD020BDD8D600E718D1 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 620A5FCF20BDD8D600E718D1 /* DBManager.m */; };
+		620CDF0820BF03510034D5AF /* Expenses.m in Sources */ = {isa = PBXBuildFile; fileRef = 620CDF0720BF03510034D5AF /* Expenses.m */; };
+		620CDF0B20BF12700034D5AF /* ModifyProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 620CDF0A20BF12700034D5AF /* ModifyProfiles.m */; };
+		6212CC2320BDC0FD0069B93F /* piggy bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 6212CC2220BDC0FD0069B93F /* piggy bank.png */; };
+		6212CC2C20BDC4250069B93F /* profilesCreated.m in Sources */ = {isa = PBXBuildFile; fileRef = 6212CC2B20BDC4250069B93F /* profilesCreated.m */; };
+		6212CC2F20BDC4E40069B93F /* addProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 6212CC2E20BDC4E40069B93F /* addProfiles.m */; };
+		625E43CC20BDB9DB008853D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 625E43CB20BDB9DB008853D3 /* AppDelegate.m */; };
+		625E43D220BDB9DB008853D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E43D020BDB9DB008853D3 /* Main.storyboard */; };
+		625E43D420BDB9DB008853D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625E43D320BDB9DB008853D3 /* Assets.xcassets */; };
+		625E43D720BDB9DB008853D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E43D520BDB9DB008853D3 /* LaunchScreen.storyboard */; };
+		625E43DA20BDB9DB008853D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 625E43D920BDB9DB008853D3 /* main.m */; };
+		625E43E420BDB9DC008853D3 /* MoneyMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 625E43E320BDB9DC008853D3 /* MoneyMasterTests.m */; };
+		625E43EF20BDB9DC008853D3 /* MoneyMasterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 625E43EE20BDB9DC008853D3 /* MoneyMasterUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		625E43E020BDB9DC008853D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 625E43BF20BDB9DB008853D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 625E43C620BDB9DB008853D3;
+			remoteInfo = MoneyMaster;
+		};
+		625E43EB20BDB9DC008853D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 625E43BF20BDB9DB008853D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 625E43C620BDB9DB008853D3;
+			remoteInfo = MoneyMaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		620809CF20C034FA0038C373 /* AddExpense.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddExpense.h; sourceTree = "<group>"; };
+		620809D020C034FA0038C373 /* AddExpense.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddExpense.m; sourceTree = "<group>"; };
+		620809D420C058EF0038C373 /* sample.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.sql; sourceTree = "<group>"; };
+		620A5FCC20BDD8B800E718D1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		620A5FCE20BDD8D600E718D1 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		620A5FCF20BDD8D600E718D1 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		620CDF0620BF03510034D5AF /* Expenses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expenses.h; sourceTree = "<group>"; };
+		620CDF0720BF03510034D5AF /* Expenses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Expenses.m; sourceTree = "<group>"; };
+		620CDF0920BF12700034D5AF /* ModifyProfiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyProfiles.h; sourceTree = "<group>"; };
+		620CDF0A20BF12700034D5AF /* ModifyProfiles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyProfiles.m; sourceTree = "<group>"; };
+		6212CC2220BDC0FD0069B93F /* piggy bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piggy bank.png"; sourceTree = "<group>"; };
+		6212CC2A20BDC4250069B93F /* profilesCreated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = profilesCreated.h; sourceTree = "<group>"; };
+		6212CC2B20BDC4250069B93F /* profilesCreated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = profilesCreated.m; sourceTree = "<group>"; };
+		6212CC2D20BDC4E40069B93F /* addProfiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addProfiles.h; sourceTree = "<group>"; };
+		6212CC2E20BDC4E40069B93F /* addProfiles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = addProfiles.m; sourceTree = "<group>"; };
+		625E43C720BDB9DB008853D3 /* MoneyMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		625E43CA20BDB9DB008853D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		625E43CB20BDB9DB008853D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		625E43D120BDB9DB008853D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		625E43D320BDB9DB008853D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		625E43D620BDB9DB008853D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		625E43D820BDB9DB008853D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625E43D920BDB9DB008853D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		625E43DF20BDB9DC008853D3 /* MoneyMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		625E43E320BDB9DC008853D3 /* MoneyMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyMasterTests.m; sourceTree = "<group>"; };
+		625E43E520BDB9DC008853D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625E43EA20BDB9DC008853D3 /* MoneyMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		625E43EE20BDB9DC008853D3 /* MoneyMasterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyMasterUITests.m; sourceTree = "<group>"; };
+		625E43F020BDB9DC008853D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		625E43C420BDB9DB008853D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620A5FCD20BDD8B800E718D1 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625E43DC20BDB9DC008853D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625E43E720BDB9DC008853D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		620A5FCB20BDD8B800E718D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				620A5FCC20BDD8B800E718D1 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		625E43BE20BDB9DB008853D3 = {
+			isa = PBXGroup;
+			children = (
+				625E43C920BDB9DB008853D3 /* MoneyMaster */,
+				625E43E220BDB9DC008853D3 /* MoneyMasterTests */,
+				625E43ED20BDB9DC008853D3 /* MoneyMasterUITests */,
+				625E43C820BDB9DB008853D3 /* Products */,
+				620A5FCB20BDD8B800E718D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		625E43C820BDB9DB008853D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				625E43C720BDB9DB008853D3 /* MoneyMaster.app */,
+				625E43DF20BDB9DC008853D3 /* MoneyMasterTests.xctest */,
+				625E43EA20BDB9DC008853D3 /* MoneyMasterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		625E43C920BDB9DB008853D3 /* MoneyMaster */ = {
+			isa = PBXGroup;
+			children = (
+				620A5FCE20BDD8D600E718D1 /* DBManager.h */,
+				620A5FCF20BDD8D600E718D1 /* DBManager.m */,
+				6212CC2A20BDC4250069B93F /* profilesCreated.h */,
+				6212CC2B20BDC4250069B93F /* profilesCreated.m */,
+				620CDF0620BF03510034D5AF /* Expenses.h */,
+				620CDF0720BF03510034D5AF /* Expenses.m */,
+				620809CF20C034FA0038C373 /* AddExpense.h */,
+				620809D020C034FA0038C373 /* AddExpense.m */,
+				6212CC2D20BDC4E40069B93F /* addProfiles.h */,
+				6212CC2E20BDC4E40069B93F /* addProfiles.m */,
+				620CDF0920BF12700034D5AF /* ModifyProfiles.h */,
+				620CDF0A20BF12700034D5AF /* ModifyProfiles.m */,
+				625E43CA20BDB9DB008853D3 /* AppDelegate.h */,
+				625E43CB20BDB9DB008853D3 /* AppDelegate.m */,
+				625E43D020BDB9DB008853D3 /* Main.storyboard */,
+				620809D420C058EF0038C373 /* sample.sql */,
+				625E43D320BDB9DB008853D3 /* Assets.xcassets */,
+				6212CC2220BDC0FD0069B93F /* piggy bank.png */,
+				625E43D520BDB9DB008853D3 /* LaunchScreen.storyboard */,
+				625E43D820BDB9DB008853D3 /* Info.plist */,
+				625E43D920BDB9DB008853D3 /* main.m */,
+			);
+			path = MoneyMaster;
+			sourceTree = "<group>";
+		};
+		625E43E220BDB9DC008853D3 /* MoneyMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				625E43E320BDB9DC008853D3 /* MoneyMasterTests.m */,
+				625E43E520BDB9DC008853D3 /* Info.plist */,
+			);
+			path = MoneyMasterTests;
+			sourceTree = "<group>";
+		};
+		625E43ED20BDB9DC008853D3 /* MoneyMasterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				625E43EE20BDB9DC008853D3 /* MoneyMasterUITests.m */,
+				625E43F020BDB9DC008853D3 /* Info.plist */,
+			);
+			path = MoneyMasterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		625E43C620BDB9DB008853D3 /* MoneyMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625E43F320BDB9DC008853D3 /* Build configuration list for PBXNativeTarget "MoneyMaster" */;
+			buildPhases = (
+				625E43C320BDB9DB008853D3 /* Sources */,
+				625E43C420BDB9DB008853D3 /* Frameworks */,
+				625E43C520BDB9DB008853D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyMaster;
+			productName = MoneyMaster;
+			productReference = 625E43C720BDB9DB008853D3 /* MoneyMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		625E43DE20BDB9DC008853D3 /* MoneyMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625E43F620BDB9DC008853D3 /* Build configuration list for PBXNativeTarget "MoneyMasterTests" */;
+			buildPhases = (
+				625E43DB20BDB9DC008853D3 /* Sources */,
+				625E43DC20BDB9DC008853D3 /* Frameworks */,
+				625E43DD20BDB9DC008853D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				625E43E120BDB9DC008853D3 /* PBXTargetDependency */,
+			);
+			name = MoneyMasterTests;
+			productName = MoneyMasterTests;
+			productReference = 625E43DF20BDB9DC008853D3 /* MoneyMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		625E43E920BDB9DC008853D3 /* MoneyMasterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625E43F920BDB9DC008853D3 /* Build configuration list for PBXNativeTarget "MoneyMasterUITests" */;
+			buildPhases = (
+				625E43E620BDB9DC008853D3 /* Sources */,
+				625E43E720BDB9DC008853D3 /* Frameworks */,
+				625E43E820BDB9DC008853D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				625E43EC20BDB9DC008853D3 /* PBXTargetDependency */,
+			);
+			name = MoneyMasterUITests;
+			productName = MoneyMasterUITests;
+			productReference = 625E43EA20BDB9DC008853D3 /* MoneyMasterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		625E43BF20BDB9DB008853D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Clac;
+				TargetAttributes = {
+					625E43C620BDB9DB008853D3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					625E43DE20BDB9DC008853D3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 625E43C620BDB9DB008853D3;
+					};
+					625E43E920BDB9DC008853D3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 625E43C620BDB9DB008853D3;
+					};
+				};
+			};
+			buildConfigurationList = 625E43C220BDB9DB008853D3 /* Build configuration list for PBXProject "MoneyMaster" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 625E43BE20BDB9DB008853D3;
+			productRefGroup = 625E43C820BDB9DB008853D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				625E43C620BDB9DB008853D3 /* MoneyMaster */,
+				625E43DE20BDB9DC008853D3 /* MoneyMasterTests */,
+				625E43E920BDB9DC008853D3 /* MoneyMasterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		625E43C520BDB9DB008853D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625E43D720BDB9DB008853D3 /* LaunchScreen.storyboard in Resources */,
+				6212CC2320BDC0FD0069B93F /* piggy bank.png in Resources */,
+				625E43D420BDB9DB008853D3 /* Assets.xcassets in Resources */,
+				625E43D220BDB9DB008853D3 /* Main.storyboard in Resources */,
+				620809D520C058EF0038C373 /* sample.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625E43DD20BDB9DC008853D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625E43E820BDB9DC008853D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		625E43C320BDB9DB008853D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620809D120C034FA0038C373 /* AddExpense.m in Sources */,
+				620CDF0820BF03510034D5AF /* Expenses.m in Sources */,
+				625E43DA20BDB9DB008853D3 /* main.m in Sources */,
+				620CDF0B20BF12700034D5AF /* ModifyProfiles.m in Sources */,
+				6212CC2F20BDC4E40069B93F /* addProfiles.m in Sources */,
+				625E43CC20BDB9DB008853D3 /* AppDelegate.m in Sources */,
+				6212CC2C20BDC4250069B93F /* profilesCreated.m in Sources */,
+				620A5FD020BDD8D600E718D1 /* DBManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625E43DB20BDB9DC008853D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625E43E420BDB9DC008853D3 /* MoneyMasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625E43E620BDB9DC008853D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625E43EF20BDB9DC008853D3 /* MoneyMasterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		625E43E120BDB9DC008853D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 625E43C620BDB9DB008853D3 /* MoneyMaster */;
+			targetProxy = 625E43E020BDB9DC008853D3 /* PBXContainerItemProxy */;
+		};
+		625E43EC20BDB9DC008853D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 625E43C620BDB9DB008853D3 /* MoneyMaster */;
+			targetProxy = 625E43EB20BDB9DC008853D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		625E43D020BDB9DB008853D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625E43D120BDB9DB008853D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		625E43D520BDB9DB008853D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625E43D620BDB9DB008853D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		625E43F120BDB9DC008853D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		625E43F220BDB9DC008853D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		625E43F420BDB9DC008853D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Claudio266452.MoneyMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		625E43F520BDB9DC008853D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Claudio266452.MoneyMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		625E43F720BDB9DC008853D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Claudio266452.MoneyMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyMaster.app/MoneyMaster";
+			};
+			name = Debug;
+		};
+		625E43F820BDB9DC008853D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Claudio266452.MoneyMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyMaster.app/MoneyMaster";
+			};
+			name = Release;
+		};
+		625E43FA20BDB9DC008853D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Claudio266452.MoneyMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyMaster;
+			};
+			name = Debug;
+		};
+		625E43FB20BDB9DC008853D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Claudio266452.MoneyMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyMaster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		625E43C220BDB9DB008853D3 /* Build configuration list for PBXProject "MoneyMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625E43F120BDB9DC008853D3 /* Debug */,
+				625E43F220BDB9DC008853D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625E43F320BDB9DC008853D3 /* Build configuration list for PBXNativeTarget "MoneyMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625E43F420BDB9DC008853D3 /* Debug */,
+				625E43F520BDB9DC008853D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625E43F620BDB9DC008853D3 /* Build configuration list for PBXNativeTarget "MoneyMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625E43F720BDB9DC008853D3 /* Debug */,
+				625E43F820BDB9DC008853D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625E43F920BDB9DC008853D3 /* Build configuration list for PBXNativeTarget "MoneyMasterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625E43FA20BDB9DC008853D3 /* Debug */,
+				625E43FB20BDB9DC008853D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 625E43BF20BDB9DB008853D3 /* Project object */;
+}
